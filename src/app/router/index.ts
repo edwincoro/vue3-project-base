@@ -11,14 +11,6 @@ const router = createRouter({
       redirect: '/home'
     },
     {
-      path: '/home',
-      name: 'home',
-      component: () => import('@/modules/home/views/HomeView.vue'),
-      meta: {
-        requiresAuth: true
-      }
-    },
-    {
       path: '/login',
       name: 'login',
       component: () => import('@/modules/auth/views/LoginView.vue')
@@ -29,23 +21,31 @@ const router = createRouter({
       component: () => import('@/modules/auth/views/RegisterView.vue')
     },
     {
-      path: '/categories',
-      name: 'categories',
-      component: () =>
-        import('@/modules/categories/views/CategoryListView.vue'),
+      path: '/',
+      component: () => import('@/app/layouts/AuthenticatedLayout.vue'),
       meta: {
         requiresAuth: true
-      }
-    },
-    {
-        path: '/products',
-        name: 'products',
-        component: () =>
-          import('@/modules/products/views/ProductListView.vue'),
-        meta: {
-          requiresAuth: true
+      },
+      children: [
+        {
+          path: 'home',
+          name: 'home',
+          component: () => import('@/modules/home/views/HomeView.vue')
+        },
+
+        {
+          path: 'categories',
+          name: 'categories',
+          component: () => import('@/modules/categories/views/CategoryListView.vue')
+        },
+
+        {
+          path: 'products',
+          name: 'products',
+          component: () => import('@/modules/products/views/ProductListView.vue')
         }
-      }
+      ]
+    }
   ]
 });
 
