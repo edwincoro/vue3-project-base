@@ -1,6 +1,11 @@
 {
   "users": [
     {
+      "email": "nuevo@demo.com",
+      "password": "$2a$10$PNiFB9JwyMe4noL4SjLjjucqgvNC8bGyp39ktnxaTwZKqYTpjqyr.",
+      "id": 4
+    },
+    {
       "email": "admin@demo.com",
       "password": "$2a$10$.vOlDDl8S4iTGmSVma2yzuqU977PLH2ai1XYrdGym9q41ARC/tNXS",
       "id": 1
@@ -18,52 +23,64 @@
   ],
   "categories": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Electrónica"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Oficina"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Hogar"
     },
     {
-      "name": "Jardin",
-      "id": "HzuvLgJ"
+      "id": 4,
+      "name": "Jardin"
     }
   ],
   "products": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Laptop Lenovo",
       "price": 4500,
-      "categoryId": "1"
+      "categoryId": 1
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Monitor Samsung",
-      "price": 1800,
-      "categoryId": "1"
+      "price": 800,
+      "categoryId": 1
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Impresora HP",
       "price": 2200,
-      "categoryId": "2"
+      "categoryId": 2
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Escritorio",
       "price": 1200,
-      "categoryId": "3"
+      "categoryId": 3
     },
     {
+      "id": 5,
       "name": "Silla Plegable",
-      "price": 250,
-      "categoryId": "HzuvLgJ",
-      "id": "wj_un1L"
+      "price": 450,
+      "categoryId": 4
+    },
+    {
+      "name": "producto",
+      "price": 110,
+      "categoryId": 2,
+      "id": 6
+    },
+    {
+      "name": "Cuadernos",
+      "price": 6660,
+      "categoryId": 2,
+      "id": 7
     }
   ]
 }
