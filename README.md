@@ -2,6 +2,13 @@
 
 Proyecto base desarrollado con **Vue 3 + TypeScript + Vite**, siguiendo una arquitectura modular y orientada a la separación de responsabilidades.
 
+## Integrantes del grupo
+
+| Nombre |
+|--------|
+| Sefora Arcos Montoya |
+| Edwin Coro Aricoma |
+
 ## Tecnologías
 
 * Vue 3
